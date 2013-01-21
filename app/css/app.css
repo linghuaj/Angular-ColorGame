@@ -1,4 +1,9 @@
 /* app css stylesheet */
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
 .box{
 width:300px;
 height:150px;
