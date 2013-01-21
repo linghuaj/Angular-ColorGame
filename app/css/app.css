@@ -1,0 +1,65 @@
+/* app css stylesheet */
+.box{
+width:300px;
+height:150px;
+display: inline-block;
+margin: auto;
+margin-right:20px;
+margin-top:20px;
+background-color: white;
+-webkit-box-shadow: 0 3px 15px 0 #000000;
+-moz-box-shadow: 0 3px 15px 0 #000000;
+box-shadow: 0 3px 15px 0 #000000;
+vertical-align:bottom;
+background: #f5f5f5; 
+border-radius: 7px;
+	
+}
+.red{
+margin-top: 20%;
+font-family: Arial Black; 
+font-size: 48px;
+margin-left:80px; 
+color: red;
+
+}
+.blue{
+margin-left:20%;
+margin-top: 60px;
+font-family: Arial Black; 
+font-size: 48px; 
+color: blue;
+}
+.green{
+margin-left:20%;
+margin-top: 60px;
+font-family: Arial Black; 
+font-size: 48px; 
+color:green;
+}
+.orange{
+margin-left:20%;
+margin-top: 60px;
+font-family: Arial Black; 
+font-size: 48px; 
+color:orange;
+}
+
+.box2{
+width:150px;
+height:150px;
+display: inline-block;
+margin: auto;
+margin-right:20px;
+margin-top:20px;
+background-color: white;
+-webkit-box-shadow: 0 3px 15px 0 #000000;
+-moz-box-shadow: 0 3px 15px 0 #000000;
+box-shadow: 0 3px 15px 0 #000000;
+vertical-align:bottom;
+background: #f5f5f5; 
+border-radius: 7px;
+}
+
+
+
