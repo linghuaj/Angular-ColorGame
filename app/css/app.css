@@ -1,4 +1,12 @@
 /* app css stylesheet */
+<<<<<<< HEAD
+=======
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
+>>>>>>> gh-pages
 .box{
 width:300px;
 height:150px;
@@ -16,7 +24,12 @@ border-radius: 7px;
 	
 }
 .red{
+<<<<<<< HEAD
 margin-top: 20%;
+=======
+margin-left: 20%;
+margin-top: 60px;
+>>>>>>> gh-pages
 font-family: Arial Black; 
 font-size: 48px;
 margin-left:80px; 

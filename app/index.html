@@ -12,7 +12,7 @@
 <body ng-controller="StroopGameCtrl" ui-Keydown="{71 : 'clicked(\'green\')',82 : 'clicked(\'red\')','66' : 'clicked(\'blue\')','79' : 'clicked(\'orange\')' }">
 	<div class="row-fluid" style="width:90%; margin-left:10%;margin-top:20px" >
 		<div class="span8">
-			<legend>Stroop Color Game | Countdown:<span ng-class='UI.countDownClass'>{{game.countDown}}</span></legend>		
+			<legend>Stroop Color Game | Countdown:<span ng-class='UI.countDownClass' ng-bind="game.countDown || '?'"></span></legend>		
 			<div class="alert alert-block">
 			  <button type="button" class="close" data-dismiss="alert">&times;</button>
 			  This is not for commercial use. It is a open source project build with AngularJS. 
@@ -20,15 +20,14 @@
 			  http://en.wikipedia.org/wiki/Stroop_effect
 			</div>
 			
-
-			<div id="summary" ng-show="game.isStarted">
+			<div id="summary" ng-show="game.isStarted" ng-cloak>
 			   Total right: {{game.rightCount}}, Total wrong:{{game.wrongCount}}, Total Answered {{game.rightCount+game.wrongCount}}</br>
 			</div>
 		
 			<div class="row-fluid">		
 				<div class="box">
 					<div ng-class="game.quizClass">
-					{{game.quizText}}
+						<span ng-bind="game.quizText || 'Color'"></span>					
 					</div>
 				</div>
 				<div class="box2">
@@ -62,7 +61,7 @@
 				<div id="collapseTwo" class="accordion-body collapse in">
 				  <div class="accordion-inner">
 					The rule for this game is to tell the color of the text rather than meaning of the text. </br>
-					You have <strong>{{totalTime}} seconds </strong> to answer the questions. You may either choose the buttons indicating the color 
+					You have <strong><span ng-bind="totalTime || '?'"></span>seconds </strong> to answer the questions. You may either choose the buttons indicating the color 
 					or use keyboard: press"B":blue, press"G":green, press "R": red, press "O": orange.
 					Wrong answer will substract the score, while correct answer incrementing score. </br>
 					<strong>The buttons are intentially scrambled color. Try to use the button instead of keyPress, so you get more practice.</strong>
@@ -115,7 +114,7 @@
 		</p>
 			<span class="pull-right" style="margin-right:5%">
 			   Linghua Jin 2013
-				<a href="http://www.twitter.com/linghuaj"><img src="img/twitter.png"></a>
+				<a href="http://www.twitter.com/linghuaj"><img src="img/twitter.PNG"></a>
 			</span>
 		</p>
 	</footer> 
