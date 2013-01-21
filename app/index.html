@@ -31,14 +31,14 @@
 					</div>
 				</div>
 				<div class="box2">
-					<img ng-src={{UI.imgSrc}} style="width:100px; height:100px; margin-left:15%; margin-top:15%"></img>
+					<img ng-src={{UI.imgSrc}} style="width:100px; height:100px; margin-left:15%; margin-top:15%" ng-cloak></img>
 				</div>
 			</div>
 			<div ng-show='UI.showStartButton' style="margin-top:20px; margin-bottom:20px;">		   
 				<a class="btn btn-large btn-primary" ng-click="startGame()">Start Play!</a>
 			</div>
 			
-			<div ng-show='UI.showGameButton'style="margin-top:20px; margin-bottom:20px;" >
+			<div ng-show='UI.showGameButton' style="margin-top:20px; margin-bottom:20px;" ng-cloak>
 				<a class="btn btn-large btn-danger" ng-click="clicked('green')">Green(G)</a>
 				<a class="btn btn-large btn-info" ng-click="clicked('red')">Red(R)</a>
 				<a class="btn btn-large btn-success" ng-click="clicked('orange')">Orange(O)</a>
