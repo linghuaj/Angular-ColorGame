@@ -12,7 +12,7 @@
 <body ng-controller="StroopGameCtrl" ui-Keydown="{71 : 'clicked(\'green\')',82 : 'clicked(\'red\')','66' : 'clicked(\'blue\')','79' : 'clicked(\'orange\')' }">
 	<div class="row-fluid" style="width:90%; margin-left:10%;margin-top:20px" >
 		<div class="span8">
-			<legend>Stroop Color Game | Countdown:<span ng-class='UI.countDownClass' ng-cloak>{{game.countDown}}</span></legend>		
+			<legend>Stroop Color Game | Countdown:<span ng-class='UI.countDownClass' ng-bind="game.countDown || '?'">{{game.countDown}}</span></legend>		
 			<div class="alert alert-block">
 			  <button type="button" class="close" data-dismiss="alert">&times;</button>
 			  This is not for commercial use. It is a open source project build with AngularJS. 
