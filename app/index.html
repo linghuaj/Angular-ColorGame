@@ -12,6 +12,15 @@
 </head>
 
 <body ng-controller="StroopGameCtrl" ui-Keydown="{71 : 'clicked(\'green\')',82 : 'clicked(\'red\')','66' : 'clicked(\'blue\')','79' : 'clicked(\'orange\')' }">
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=404063823048178&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div class="row-fluid" style="width:90%; margin-left:10%;margin-top:20px" >
 		<div class="span8">
 			<legend>Stroop Color Game | Countdown:<span ng-class='UI.countDownClass' ng-bind="game.countDown || '?'"></span></legend>		
@@ -118,10 +127,11 @@
 				<a href="http://www.twitter.com/linghuaj"><img src="img/twitter.PNG"></a>
 			</span>
 		</p>
+		<p>
+			<div class="fb-like" data-href="http://stroopgame.com/app/index.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+		</p>
 	</footer> 
-	<div class="ribbon right purple">
-			<a href="https://github.com/vanessachem/Angular-ColorGame">Github</a>
-	</div>
+	
 
 	<script src="lib/jquery-1.7.2.min.js"></script>
 	<script src="lib/angular/angular.js"></script>
