@@ -8,7 +8,13 @@
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
   <link rel="shortcut icon" href="img/favicon2.ico">
-  
+  <meta property="og:title" content="Stroop Color Game"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://stroopgame.com/"/>
+    <meta property="og:image" content="http://stroopgame.com/app/img/color.png"/>
+    <meta property="og:site_name" content="Stroop Color Game"/>
+    <meta property="og:description" content="Stroop Effect is a famous psychology game for testing reaction. Choose the color of the text by either clicking the button "/>
+
 </head>
 
 <body ng-controller="StroopGameCtrl" ui-Keydown="{71 : 'clicked(\'green\')',82 : 'clicked(\'red\')','66' : 'clicked(\'blue\')','79' : 'clicked(\'orange\')' }">
