@@ -8,16 +8,30 @@
   <link rel="stylesheet" href="css/bootstrap.css"/>
   <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
   <link rel="shortcut icon" href="img/favicon2.ico">
-  
+  <meta property="og:title" content="Stroop Color Game"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://stroopgame.com/"/>
+    <meta property="og:image" content="http://stroopgame.com/app/img/color.png"/>
+    <meta property="og:site_name" content="Stroop Color Game"/>
+    <meta property="og:description" content="Stroop Effect is a famous psychology game for testing reaction. Choose the color of the text by either clicking the button "/>
+
 </head>
 
 <body ng-controller="StroopGameCtrl" ui-Keydown="{71 : 'clicked(\'green\')',82 : 'clicked(\'red\')','66' : 'clicked(\'blue\')','79' : 'clicked(\'orange\')' }">
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=404063823048178&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div class="row-fluid" style="width:90%; margin-left:10%;margin-top:20px" >
 		<div class="span8">
 			<legend>Stroop Color Game | Countdown:<span ng-class='UI.countDownClass' ng-bind="game.countDown || '?'"></span></legend>		
 			<div class="alert alert-block">
 			  <button type="button" class="close" data-dismiss="alert">&times;</button>
-			  This is not for commercial use. It is a open source project build with AngularJS. 
 			  Stroop Effect is a famous psychology game for testing reaction. Choose the color of the text by either clicking the button below or keypress. 
 			  http://en.wikipedia.org/wiki/Stroop_effect
 			</div>
@@ -62,10 +76,10 @@
 				</div>
 				<div id="collapseTwo" class="accordion-body collapse in">
 				  <div class="accordion-inner">
-					The rule for this game is to tell the color of the text rather than meaning of the text. </br>
-					You have <strong><span ng-bind="totalTime || '?'"></span>seconds </strong> to answer the questions. You may either choose the buttons indicating the color 
+					The rule for this game is to tell the color of the text rather than meaning of the text. </br></br>
+					You have <strong><span ng-bind="totalTime || '?'"></span> seconds </strong> to answer the questions. You may either choose the buttons indicating the color 
 					or use keyboard: press"B":blue, press"G":green, press "R": red, press "O": orange.
-					Wrong answer will substract the score, while correct answer incrementing score. </br>
+					Wrong answer will substract the score, while correct answer incrementing score. </br></br>
 					<strong>The buttons are intentially scrambled color. Try to use the button instead of keyPress, so you get more practice.</strong>
 				  </div>
 				</div>
@@ -112,17 +126,27 @@
 	</div>
 	
 	<hr/>
+	<div class="row-fluid" style="width:90%; margin-left:10%;margin-top:20px" >
+		<div class="span8">
 	<footer>
+	
+		<p>
+			<div class="fb-like" data-href="http://stroopgame.com/app/index.html" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 		</p>
+		
+		<p>
+			<div class="fb-comments" data-href="http://stroopgame.com/app/index.html" data-numposts="5" data-colorscheme="dark"></div>
+		</p>
+	</footer> 
+	</div><div class="3">
+			<p>
 			<span class="pull-right" style="margin-right:5%">
 			   Linghua Jin 2013
 				<a href="http://www.twitter.com/linghuaj"><img src="img/twitter.PNG"></a>
 			</span>
 		</p>
-	</footer> 
-	<div class="ribbon right purple">
-			<a href="https://github.com/vanessachem/Angular-ColorGame">Github</a>
 	</div>
+	
 
 	<script src="lib/jquery-1.7.2.min.js"></script>
 	<script src="lib/angular/angular.js"></script>
