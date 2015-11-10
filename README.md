@@ -4,7 +4,5 @@ Stroop Effect is a famous psychology game for testing reaction. Choose the color
 I have not included test. 
 
 #Demo
-Try game at http://vanessachem.github.io/Angular-ColorGame/app/
+Try game at http://linghuaj.github.io/Angular-ColorGame/app/
 
-## Contact
-Please contact me at vanessachem@gmail.com
