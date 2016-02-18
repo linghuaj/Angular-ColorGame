@@ -1,4 +1,4 @@
-export interface Hero {
+export interface Color {
 // 	id: number;
 	name: string;
 }

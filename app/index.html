@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script>document.write('<base href="' + document.location + '" />');</script>
-    <title>Angular 2 Color Game</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <link rel='shortcut icon' href='https://www.angularjs.org/favicon.ico' type='image/x-icon' />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<head>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <title>Angular 2 Color Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <link rel='shortcut icon' href='https://www.angularjs.org/favicon.ico' type='image/x-icon' />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-    <!-- IE required polyfills, in this exact order -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
-    
-    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
-    <script src="https://code.angularjs.org/tools/system.js"></script>
-    <script src="https://code.angularjs.org/tools/typescript.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/Rx.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/angular2.dev.js"></script>
-    <script src="https://code.angularjs.org/2.0.0-beta.6/router.dev.js"></script>
-    <!--materialize  -->
-    <script src=" https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    
-    <!-- Firebase -->
-    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
-    <!-- AngularFire -->
-    <!-- <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script> -->
+<!-- IE required polyfills, in this exact order -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
 
-    <script>
-      System.config({
-        transpiler: 'typescript', 
-        typescriptOptions: { emitDecoratorMetadata: true }, 
-        packages: {'app': {defaultExtension: 'ts'}} 
-      });
-        System.import('app/main')
-              .then(null, console.error.bind(console));
-    </script>
-  </head>
+<script src="https://code.angularjs.org/2.0.0-beta.6/angular2-polyfills.js"></script>
+<script src="https://code.angularjs.org/tools/system.js"></script>
+<script src="https://code.angularjs.org/tools/typescript.js"></script>
+<script src="https://code.angularjs.org/2.0.0-beta.6/Rx.js"></script>
+<script src="https://code.angularjs.org/2.0.0-beta.6/angular2.dev.js"></script>
+<script src="https://code.angularjs.org/2.0.0-beta.6/router.dev.js"></script>
+<!--materialize  -->
+<script src=" https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
-  <body style="background-color:#F0F0F0">
-    
-     <main>
-       <my-app>
-         <div class="preloader-wrapper big active main-loader" style="position:absolute; top: 30%; left: 50%; margin: -50px 0 0 -50px;">
-          <div class="spinner-layer spinner-blue-only">
-            <div class="circle-clipper left">
-              <div class="circle"></div>
-            </div><div class="gap-patch">
-              <div class="circle"></div>
-            </div><div class="circle-clipper right">
-              <div class="circle"></div>
-            </div>
-          </div>
-        </div>
-    </my-app>
-     </main>
-    <footer class="page-footer blue">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Play More, Get Smarter</h5>
-                <p class="grey-text text-lighten-4">Stroop Effect is a famous psychology game for testing reaction. Choose the color of the text by either clicking the button below or keypress. http://en.wikipedia.org/wiki/Stroop_effect.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Connect</h5>
-                <ul>
-                  <li><iframe src="http://ghbtns.com/github-btn.html?user=linghuaj&amp;repo=Angular-ColorGame&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></li>
-                  <li><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.baa54ded21a982344c4ced326592f3de.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=linghuaj&amp;show_count=true&amp;show_screen_name=true&amp;size=l&amp;time=1455692794175" style="position: static; visibility: visible; width: 291px; height: 28px;" data-screen-name="linghuaj"></iframe></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2016 linghuaj
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
-  </body>
-   
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<!-- AngularFire -->
+<!-- <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script> -->
+
+<script>
+  System.config({
+    transpiler: 'typescript', 
+    typescriptOptions: { emitDecoratorMetadata: true }, 
+    packages: {'app': {defaultExtension: 'ts'}} 
+  });
+  System.import('app/main')
+  .then(null, console.error.bind(console));
+</script>
+</head>
+
+<body style="background-color:#F0F0F0">
+  
+ <main>
+   <my-app>
+   <div class="preloader-wrapper big active main-loader" style="position:absolute; top: 30%; left: 50%; margin: -50px 0 0 -50px;">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+      <div class="circle"></div>
+    </div><div class="circle-clipper right">
+    <div class="circle"></div>
+  </div>
+</div>
+</div>
+</my-app>
+</main>
+<footer class="page-footer blue">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Play More, Get Smarter</h5>
+        <p class="grey-text text-lighten-4">Stroop Effect is a famous psychology game for testing reaction. Choose the color of the text by either clicking the button below or keypress. http://en.wikipedia.org/wiki/Stroop_effect.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><iframe src="http://ghbtns.com/github-btn.html?user=linghuaj&amp;repo=Angular-ColorGame&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe></li>
+          <li><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.baa54ded21a982344c4ced326592f3de.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=linghuaj&amp;show_count=true&amp;show_screen_name=true&amp;size=l&amp;time=1455692794175" style="position: static; visibility: visible; width: 291px; height: 28px;" data-screen-name="linghuaj"></iframe></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2016 linghuaj
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
+</body>
+
 </html>

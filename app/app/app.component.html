@@ -1,6 +1,5 @@
  <header>
    <a class="brand-logo" style="color:#757575; top: 10px;">Color Game</a>
-   
    <div class="fixed-action-btn horizontal click-to-toggle" style="top: 15px; right: 24px;">
     <a class="btn-floating btn-large red">
       <i class="large mdi-navigation-menu"></i>
@@ -9,12 +8,11 @@
       <li><a class="btn-floating green"  [routerLink]="['Dashboard']"><i class="material-icons">play_arrow</i></a></li>
       <li><a class="btn-floating yellow darken-1" [routerLink]="['Heroes']"><i class="material-icons">assignment_ind</i></a></li>
       <!--<li><a class="btn-floating green"><i class="material-icons">view_headline</i></a></li>-->
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      <li><a class="btn-floating blue" [routerLink]="['Instruction']"><i class="material-icons">attach_file</i></a></li>
     </ul>
   </div>
 </header>
 <div class="row-ct">
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 
-       
