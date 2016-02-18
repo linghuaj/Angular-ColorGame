@@ -1,0 +1,54 @@
+<div class="row">
+   <div class="col s12 m12">
+      <div class="card darken-1">
+         <div class="progress">
+            <div class="determinate" style="{{progress}}"></div>
+         </div>
+         <span class="timer">Timer: {{game.countDown}}</span>
+         <div class="card-content">
+            <div class="row center-align">
+               <span class="card-title" [ngStyle]="{'color': game.colorClass}">{{game.colorText}}</span>
+               <i class="small material-icons game-icon"  [ngStyle]="{'color': icon.color}">{{icon.icon}}</i>
+            </div>
+          <div class="row">
+         <div [hidden]= 'isGameStarted()==true' class='center-align'>
+            <a class='waves-effect waves-light btn-large blue'(click)="start()"><i class="material-icons left">play_arrow</i>Start Play!</a>
+         </div>
+         <div [hidden]= 'isGameStarted()==false'>
+            <div class="row btns center-align"> 
+               <a class='waves-effect waves-light btn-large'(click)="clicked('g')">Green(G)</a>
+               <a class='waves-effect waves-light btn-large red'(click)="clicked('r')">Red(R)</a>
+               <a class='waves-effect waves-light btn-large orange'(click)="clicked('o')">Orange(O)</a>
+               <a class='waves-effect waves-light btn-large blue' (click)="clicked('b')">Blue(B)</a>
+            </div>
+         </div>
+      </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div>
+The rule for this game is to tell the color of the text rather than meaning of the text.
+</div>
+ <!-- Modal Trigger -->
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Game Completed</h4>
+      <p>You are doing awesome, your score is {{totalScore}}. </p>
+      <p>Leave your name for leaderboard</p>
+        <div class="row">
+        <div class="input-field col s6">
+          <input #name placeholder="" id="first_name" type="text" class="validate">
+          <label for="first_name">Name</label>
+        </div>
+         <button (click)="addPlayer(name.value)" class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a class=" modal-action modal-close waves-effect waves-green btn-flat">close</a>
+    </div>
+  </div>
+         

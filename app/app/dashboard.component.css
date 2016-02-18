@@ -1,0 +1,25 @@
+.card-content{
+  min-height:200px;
+}
+.card .card-title {
+    font-size: 50px;
+    font-weight: 300;
+}
+.card .card-content .card-title {
+    line-height: 80px;
+}
+
+a.waves-effect.waves-light.btn-large {
+    width: 180px;
+    margin: 2px;
+    z-index: 2;
+}
+
+span.timer {
+    float: left;
+    margin-left: 10px;
+    color: #616161 ;
+}
+i.small.material-icons.game-icon {
+    margin-left: 10px;
+}

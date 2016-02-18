@@ -1,0 +1,28 @@
+.row-ct{
+  margin-top:10px;
+  background-color: #F0F0F0 !important;
+  padding:25px;
+}
+header {
+    padding: 10px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
+}
+.brand-logo {
+ color: #757575;
+ fill: #757575;
+ height: 23px;
+ width: 110px;
+ font-size: 25px;
+ /* margin-left:10px; */
+}
+
+.fixed-action-btn.horizontal ul {
+    text-align: right !important;
+    right: 60px !important;
+    top: 0 !important;
+    height: 0 !important;
+    left: initial !important;
+    width: 300px !important;
+}
