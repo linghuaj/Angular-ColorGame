@@ -6,7 +6,7 @@ import {Router} from 'angular2/router';
   templateUrl: 'app/instruction.component.html',
   styleUrls: ['app/instruction.component.css'],
 })
-export class HeroesComponent implements OnInit {
+export class Instruction implements OnInit {
   constructor(private _router: Router) {
   }
   ngOnInit() {
