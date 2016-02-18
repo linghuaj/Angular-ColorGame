@@ -1,0 +1,46 @@
+
+<div [hidden]= 'players.length > 0' class='center-align spinner'>
+  <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div [hidden]= 'players.length == 0'>
+  <span>Top 10 Players</span>
+  <ul class="collection">
+    <li class="collection-item avatar"  *ngFor="#player of players">
+      <i class="material-icons circle">assignment_ind</i>
+      <span class="title">{{player.name}}</span>
+      <p>{{player.score}}</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </ul>
+</div>       
+
+
+<!-- <div>
+<h2>My Heroes</h2>
+<ul class="heroes">
+<li *ngFor="#hero of heroes"
+[class.selected]="hero === selectedHero"
+(click)="onSelect(hero)">
+<span class="badge">{{hero.id}}</span> {{hero.name}}
+</li>
+</ul>
+<div *ngIf="selectedHero">
+<h2>{{selectedHero.name | uppercase}} is my hero</h2>
+<button (click)="gotoDetail()">View Details</button>
+</div>
+</div>
+
+
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license -->
