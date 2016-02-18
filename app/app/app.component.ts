@@ -13,7 +13,7 @@ import {InstructionComponent} from './instruction.component';
 @RouteConfig([
   {path: '/dashboard', name: 'Dashboard', component: DashboardComponent, useAsDefault: true},
   {path: '/heroes', name: 'Heroes', component: HeroesComponent},
-  {path: '/instruction', name: 'Instruction', component: InstructionComponent},
+  //{path: '/instruction', name: 'Instruction', component: InstructionComponent}
 ])
 export class AppComponent {
   public title = 'Color Game';
