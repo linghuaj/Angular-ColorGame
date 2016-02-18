@@ -18,6 +18,7 @@ Recently, this app has been upgraded to Angular2 with typescript. Old Angular is
 * This is using Angular2 Beta version. When stable version comes out, a upgraded is needed. 
 * Add keypress Support. 
 * Set up a dev mode and a prod mode, so developers would easily be able to run this without a apache server. 
+* Create a description page, so Rules are cleared discribed with screenshot. 
 
 Please leave any suggestions/comments/ or contribute to make this game better. 
 
