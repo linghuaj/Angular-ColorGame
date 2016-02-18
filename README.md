@@ -22,6 +22,12 @@ Please leave any suggestions/comments/ or contribute to make this game better.
 
 ##Demo
 Try game at http://linghuaj.github.io/Angular-ColorGame/app/
+[![color game](https://raw.githubusercontent.com/linghuaj/Angular-ColorGame/master/screenshot.PNG)](#features)
+
+##Play on your cellphone:
+scan
+[![qr code](https://raw.githubusercontent.com/linghuaj/Angular-ColorGame/master/qrcode.png)](#features)
+
 
 ##Reference:
 This is build based on Angular2 Hero project.
