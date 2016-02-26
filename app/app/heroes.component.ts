@@ -18,7 +18,7 @@ export class HeroesComponent implements OnInit {
     var self = this;
     this.players = [];
     this.dataRef.orderByChild("score").limitToLast(10).on("child_added", function(snapshot) {
-      self.players.push(snapshot.val());
+      self.players.unshift(snapshot.val());
     });
   }
   ngOnInit() {
