@@ -24,7 +24,6 @@ Please leave any suggestions/comments/ or contribute to make this game better.
 
 ##Demo
 Try game at 
-*  http://stroopgame.com
 *  http://linghuaj.github.io/Angular-ColorGame/app/
 [![color game](https://raw.githubusercontent.com/linghuaj/Angular-ColorGame/master/screenshot.PNG)](#features)
 
